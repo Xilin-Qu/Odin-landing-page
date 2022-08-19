@@ -9,7 +9,7 @@ body {
     justify-content: space-between;
     align-items: center;
     flex-grow: 1;
-    background-color: black;
+    background-color: rgb(0, 0, 0);
     
     
 }
@@ -38,14 +38,91 @@ body {
 .content1 {
     background-image: url(image/body1.jpg);
     height: 1080px;
-    font-weight: 900;
-    font-size: 50px;
     color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+.c1_text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 200px;
+}
+.c1_title {
+    font-size: 60px;
+    margin: 0px;
 }
 
-h2 {
+.c1_content {
+    width: 500px;
+    padding:0px;
+    font-size: 30px;
+    font-weight: 600;
+    
+}
+
+.c1_button {
+    background-color: rgba(255, 255, 255, 0.747);
+    padding: 20px 80px;
+    font-size: 30px;
+    border: 0px;
+    border-radius: 15px;
+}
+
+.content2 {
+    position: relative;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    margin-top: 504px;
+    background-image: url(image/content2bg.jpg);
+    height: 1080px;
+    justify-content: center;
+}
+
+.content2::before {
+    content: "";
+    background-color: black;
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    opacity: 0.35;
+}
+
+.c2_title {
+    position: relative;
+    color: white;
+    font-size: 60px;
+    font-weight: 600;
+    text-shadow: 15px 15px 20px black;
+    margin-right: 1200px;
+}
+
+.leblocks {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.block {
+    padding: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.box_img {
+    box-shadow: 5px 5px 20px black;
+}
+
+.des {
+    color: white;
+    font-size: 30px;
+    font-weight: 500;
+    width: 235px;
+    
 }
