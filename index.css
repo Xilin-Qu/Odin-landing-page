@@ -111,7 +111,7 @@ body {
     font-size: 60px;
     font-weight: 600;
     text-shadow: 15px 15px 20px black;
-    margin-right: 1300px;
+    align-self: flex-start;
 }
 
 .leblocks {
