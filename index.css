@@ -1,5 +1,5 @@
 body {
-    padding: 0px;
+    padding: auto;
     margin: auto;
 }
 
@@ -8,7 +8,6 @@ body {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    flex-grow: 1;
     background-color: rgb(0, 0, 0);
     
     
@@ -20,7 +19,6 @@ body {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    flex-grow: 1;
     background-color: rgb(0, 0, 0);
     height: 100px;
     color: white;
@@ -49,12 +47,12 @@ body {
 
 .content1 {
     background-image: url(image/fire.jpg);
-    height: 1080px;
     color: white;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-end;
+    height: 1080px;
 }
 .c1_text {
     display: flex;
@@ -89,8 +87,9 @@ body {
     flex-direction: column;
     align-items: center;
     background-image: url(image/formation.jpg);
-    height: 1080px;
     justify-content: center;
+    padding: 80px;
+    height: 1080px;
 }
 
 .content2::before {
@@ -105,23 +104,26 @@ body {
     opacity: 0.35;
 }
 
+
+
 .c2_title {
     position: relative;
     color: white;
     font-size: 60px;
     font-weight: 600;
     text-shadow: 15px 15px 20px black;
-    align-self: flex-start;
 }
 
 .leblocks {
     position: relative;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
+    gap: 100px;
+    align-self: center;
 }
 .block {
-    padding: 100px;
+    padding: 0px;
     display: flex;
     flex-direction: column;
     align-items: center;
